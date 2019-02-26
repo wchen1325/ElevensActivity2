@@ -81,10 +81,11 @@ public class Deck {
      */
     public Card deal() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-        if (!cards.isEmpty()){
-            return cards.get(size-1);
+        if (cards.isEmpty()){
+            return null;
         }
-        return null;
+        size--;
+        return cards.get(size);
     }
 
     /**
